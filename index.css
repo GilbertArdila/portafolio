@@ -19,6 +19,7 @@ a{
     cursor: pointer;
 
 }
+
 header{
     display: flex;
     flex-direction: column;
@@ -33,9 +34,10 @@ header{
    justify-content: space-between;
 }
 
-.header__div span{
+.header__div .nav__title{
     font-weight: bold;
     margin: 0 20px;
+    font-size: 2rem;
 }
 .header__div li{
     list-style: none;
@@ -47,6 +49,9 @@ header{
     align-items:end;
     height: 50%;
 
+}
+.header_menu_img:hover{
+    transform: scale(1.2);
 }
 
 nav{
@@ -71,6 +76,9 @@ nav{
    text-decoration: none;
    color: black;
 }
+.header-nav .header-nav__ul li:hover {
+    transform: scale(1.1);
+}
 main{
     width: 100%;
     height: auto;
@@ -93,27 +101,28 @@ main{
     font-weight: bold;
     margin-bottom: 10px;
 }
-.personal-data span h1{
-    font-size: 2rem;
-}
+
 .personal-data p{
     font-size: 1.6rem;
     font-weight: lighter;
     margin: 0;
     margin-bottom: 10px;
+
     padding: 0;
 }
 .personal-data__ul li{
     display: inline;
     margin: 0 10px 0 0;
 }
+
 .personal-data__ul img{
     position: relative;
     width: 20px;
     top: 3px;
     
 }
-.about-me{
+.about-me
+{
     width: 100%;
     height: auto;
     padding: 10px 10px;
@@ -123,23 +132,45 @@ main{
 .about-me p{
     margin: 10px;
 }
-.Skills{
+.Skills,
+.Hobbies{
    display: flex;
    flex-direction: column;
 }
-.Skills div h2{
+.Skills div h2,
+.Hobbies div h2{
     text-align: center;
     margin-bottom: 10px;
 }
-.Skills .Skills-logos{
+.Skills .Skills-logos,
+.Hobbies .hobbies-logos
+{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     justify-items: center;
 }
-.Skills .Skills-logos picture{
+.Skills .Skills-logos picture,
+.Hobbies .hobbies-logos picture{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px auto;
+    width: 100px;
+    height: 80px;
+    background-color: white;
 }
-
+ 
+.Hobbies .hobbies-logos .movies img{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 100px;
+    height: 80px;
+    background-color: white;
+}
 footer{
     width: 100%;
     height: 100px;
