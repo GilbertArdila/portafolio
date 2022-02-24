@@ -46,28 +46,36 @@
 
     </header>
     <main>
-        <div class="personal-data">
-            <picture>
-                <img src="./Image/perfil.jpg" alt="foto de perfil">
-            </picture>
+        <section>
+            <div class="personal-data">
+                <picture>
+                    <img src="./Image/perfil.jpg" alt="foto de perfil">
+                </picture>
+    
+                <span>Hola, mi nombre es Gilbert Ardila  y soy un  desarrollador web con conocimientos backend </span>
+    
+                <p>tengo conocimientos frontend en HTML5, CSS3 y Javascript; en el area backend en Java, SpringBoot y Python y en gestores de bases de datos como Mysql y Mongo.</p>
+    
+                <ul class="personal-data__ul">
+                    <li><a>GitHub <span><img src="./Image//arrow.png" alt="arrow"></span></a></li>
+                    <li><a>Linkedin</a><span><img src="./Image//arrow.png" alt="arrow"></span></li>
+                    <li><a>Curriculo</a><span><img src="./Image//arrow.png" alt="arrow"></span></li>
+                </ul>
+            </div>
+        </section>
+         
+        <section>
+            <div class="about-me" id="about-me">
+                <h2>Sobre mi</h2>
+              <p>Mi nombre es Gilbert Ardila y actualmente tengo 39 años de edad. Soy Colombiano de nacimiento y vivo en la ciudad de Bogot&aacute;, soy una persona comprometida con mis labores, me considero proactivo, colaborador y esforzado</p>
+              <p>soy felizmente casado, con cuatro hijos, y actualmente estoy innovando en la profesi&oacute;n de desarrollador web, he encontrado mi pasi&oacute;n
+             en este medio y me siento muy feliz de poder desarrollarla </p>
+            </div>
+        </section>
 
-            <span>Hola, mi nombre es Gilbert Ardila  y soy un  desarrollador web con conocimientos backend </span>
+     <section>
 
-            <p>tengo conocimientos frontend en HTML5, CSS3 y Javascript; en el area backend en Java, SpringBoot y Python y en gestores de bases de datos como Mysql y Mongo.</p>
-
-            <ul class="personal-data__ul">
-                <li><a>GitHub <span><img src="./Image//arrow.png" alt="arrow"></span></a></li>
-                <li><a>Linkedin</a><span><img src="./Image//arrow.png" alt="arrow"></span></li>
-                <li><a>Curriculo</a><span><img src="./Image//arrow.png" alt="arrow"></span></li>
-            </ul>
-        </div>
-
-        <div class="about-me" id="about-me">
-            <h2>Sobre mi</h2>
-          <p>Mi nombre es Gilbert Ardila y actualmente tengo 39 años de edad. Soy Colombiano de nacimiento y vivo en la ciudad de Bogot&aacute;, soy una persona comprometida con mis labores, me considero proactivo, colaborador y esforzado</p>
-          <p>soy felizmente casado, con cuatro hijos, y actualmente estoy innovando en la profesi&oacute;n de desarrollador web, he encontrado mi pasi&oacute;n
-         en este medio y me siento muy feliz de poder desarrollarla </p>
-        </div>
+        <p class="section-p">Dentro de mis conocimientos se encuentran las tecnolog&iacute;as de HTML, CSS Y JavaScript en el area de desarrollo web, adicionalmente en el area de backend tengo conocimientos en Python, Java y su framework SprigBoot; tambien he manejado gestores de bases de datos como Mysql y Mongo db; en cuanto a  metodolog&iacute;as agiles he utilizado scrum con los gestores de tareas Trello y Jira. </p>
 
         <div class="Skills" id="skills">
             <div><h2>Skills</h2></div>
@@ -117,7 +125,10 @@
             </div>
             
         </div>
+     </section>
 
+      <section>
+        <p class="section-p">Me gusta escuchar m&uacute;sica, leer libros (mis favoritos son El hobit, El señor de los anillos y Fable haven), maratonear y otro de mis pasatiempos es la comida </p>
         <div class="Hobbies" id="hobbies">
             <div><h2>Hobbies</h2></div>
 
@@ -151,16 +162,96 @@
                     <p>Leer</p>
                 </picture>
             </div>
-           
-
 
         </div>
+      </section>
 
-        <div class="studies" id="education"></div>
+      <section>
+          <p class="section-p">Dentro de mi formaci&oacute;n  acad&eacute;mica se encuentra un tecn&oacute;logo en diseño y desarrollo de software que actualmente estoy cursando en el Sena, un curso realizado con el Ministerio de las tic de Colombia, un curso en realizaci&oacute;n en Alura-latam y actualmente estoy cursando la escuela de desarrollo web en Platzi </p>
+        <div class="studies" id="education">
+            <div><h2>Formaci&oacute;n acad&eacute;mica</h2></div>
 
-        <div class="laboral-experience" id="projects"></div>
+            <div class="education-logos">
 
-        <div class="contact-me"></div>
+                <picture class="sena">
+                    <img src="./Image//sena.png" alt="sena">
+                    <p>sena</p>
+                </picture>
+    
+                <picture class="mision-tic">
+                    <img src="./Image/mision.png" alt="mision-tic2022">
+                    <p>Misi&oacute;n-tic 2022</p>
+                </picture>
+
+                <picture class="alura">
+                    <source srcset="./Image/aluraG.png" media="(min-width:1200px)">
+                    <source srcset="./Image/aluraM.png" media="(min-width:560px)">
+                    <img src="./Image/aluraM.png" alt="alura">
+                    <p>Alura latam</p>
+                </picture>
+
+                <picture class="platzi">
+                    <img src="./Image/platzi.png" alt="platzi">
+                    <p>Platzi</p>
+                </picture>
+            </div>
+        </div>
+      </section>
+        
+      <section>
+        <p class="section-p">Acontinuaci&oacute;n encontraras los links que te llevar&aacute;n a ver algunos de mis trabajos en el area de desarrollo web </p>
+        <div class="laboral-experience" id="projects">
+            <div><h2>Experiencia profesional</h2></div>
+            <div class="laboral-experience-logos">
+                <picture class="sena">
+                    <img src="./Image//aluraM.png" alt="sena">
+                    <p><a href="">Google clone</a> </p>
+                </picture>
+                <div>
+                    <button class="secondary">Reposit&oacute;rio</button>
+                    <button class="primary">p&aacute;gina</button>
+                </div>
+
+                <picture class="sena">
+                    <img src="./Image//aluraM.png" alt="sena">
+                    <p><a href="">Mobile first</a> </p>
+                </picture>
+                <div>
+                    <button class="secondary">Reposit&oacute;rio</button>
+                    <button class="primary">p&aacute;gina</button>
+                </div>
+
+                <picture class="sena">
+                    <img src="./Image//aluraM.png" alt="sena">
+                    <p><a href="">El ahorcado</a> </p>
+                </picture>
+                <div>
+                    <button class="secondary">Reposit&oacute;rio</button>
+                    <button class="primary">p&aacute;gina</button>
+                </div>
+
+                <picture class="sena">
+                    <img src="./Image//aluraM.png" alt="sena">
+                    <p><a href="">Encriptador</a> </p>
+                </picture>
+                <div>
+                    <button class="secondary">Reposit&oacute;rio</button>
+                    <button class="primary">p&aacute;gina</button>
+                </div>
+            </div>
+           
+
+        </div>
+      </section>
+        
+      <section>
+           <div class="contact-me"> </div>
+      </section>
+       
+
+       
+
+       
     </main>
     <footer>
     </footer>

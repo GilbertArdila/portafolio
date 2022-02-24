@@ -1,3 +1,7 @@
+:root{
+    --verde_claro: #EAF2FD;
+    --primary-blue:#2A7AE4;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -127,18 +131,27 @@ main{
     height: auto;
     padding: 10px 10px;
     margin-top: 10px;
-    background: #EAF2FD;
+    background: var(--verde_claro);
 }
 .about-me p{
     margin: 10px;
 }
+.section-p{
+    margin: 10px;
+    padding: 0 5px;
+}
 .Skills,
-.Hobbies{
+.Hobbies,
+.studies,
+.laboral-experience{
    display: flex;
    flex-direction: column;
+   background: var(--verde_claro);
 }
 .Skills div h2,
-.Hobbies div h2{
+.Hobbies div h2,
+.studies div h2,
+.laboral-experience div h2{
     text-align: center;
     margin-bottom: 10px;
 }
@@ -149,8 +162,16 @@ main{
     grid-template-columns: 1fr 1fr ;
     justify-items: center;
 }
+.studies .education-logos
+{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+}
 .Skills .Skills-logos picture,
-.Hobbies .hobbies-logos picture{
+.Hobbies .hobbies-logos picture
+{
     display:flex ;
     flex-direction: column;
     justify-content: center;
@@ -160,19 +181,60 @@ main{
     height: 80px;
     background-color: white;
 }
- 
-.Hobbies .hobbies-logos .movies img{
+.studies .education-logos picture,
+.laboral-experience .laboral-experience-logos picture{
     display:flex ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-    width: 100px;
+    width: 90%;
     height: 80px;
     background-color: white;
+}
+
+.Hobbies .hobbies-logos .movies img{
+    
+    width: 100px;
+    height: 80px;
+}
+.education-logos .sena img,
+.education-logos .mision-tic img,
+.education-logos .alura img,
+.education-logos .platzi img{
+    width: 100px;
+    height: 60px;
+}
+
+.laboral-experience .laboral-experience-logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.laboral-experience .laboral-experience-logos picture img{
+    width: 100px;
+    height: 60px;
+}
+.laboral-experience-logos .primary{
+  background-color:var(--primary-blue) ;
+  color: white;
+  padding: 10px;
+  border: none;
+ 
+
+}
+.laboral-experience-logos .secondary{
+    border:1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    padding: 10px;
+    margin-right: 20px;
+    
 }
 footer{
     width: 100%;
     height: 100px;
     background-color: black;
+    margin-top: 10px;
 }
