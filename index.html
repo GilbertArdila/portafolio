@@ -11,6 +11,8 @@
 
     <title>Gilbert Ardila</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" media="(min-width: 576px) " href="./tablet.css" /> 
+    <link rel="stylesheet" media="(min-width: 1200px) " href="./desktop.css" /> 
 </head>
 <body>
     <header>
@@ -21,7 +23,8 @@
                 <img class="nav__img" src="./Image/Groupestrella.png" alt="logo">
             </picture>
 
-            <h1 class="nav__title">Gilbert Ardila</h1>
+            <h1 class="nav__title">
+               <a href="mailto'gilbertferney@gmail.com'" target="_blank"></a> GilbertArdila@contacto</h1>
 
            
         </div>
@@ -40,16 +43,28 @@
             <li><a href="#hobbies">Hobbies</a></li>
             <li><a href="#education">Formación</a></li>
             <li><a href="#projects">Proyectos</a></li>
-            <li > <a href="mailto:gilbertferney@gmail.com"> Contacto@gilbertardila</a></li>
+            <li > <a href="#contacto"> Contacto@gilbertardila</a></li>
          </ul>
         </nav>
+        <nav class="header-nav-tablet" >
+            <ul class="header-nav-tablet__ul">    
+               <li><a href="#about-me">Sobre mi</a> </li>
+               <li><a href="#skilss">Skills</a></li>
+               <li><a href="#hobbies">Hobbies</a></li>
+               <li><a href="#education">Formación</a></li>
+               <li><a href="#projects">Proyectos</a></li>
+               <li > <a href="#contacto"> Contacto</a></li>
+            </ul>
+           </nav>
+        
 
     </header>
     <main>
         <section>
             <div class="personal-data">
                 <picture>
-                    <img src="./Image/perfil.jpg" alt="foto de perfil">
+                    <source srcset="./Image/perfil.jpg" media="(min-width:1024px)"> 
+                    <img src="./Image/foto.png" alt="foto de perfil">
                 </picture>
     
                 <span>Hola, mi nombre es Gilbert Ardila  y soy un  desarrollador web con conocimientos backend </span>
@@ -203,40 +218,42 @@
         <div class="laboral-experience" id="projects">
             <div><h2>Experiencia profesional</h2></div>
             <div class="laboral-experience-logos">
-                <picture class="sena">
-                    <img src="./Image//aluraM.png" alt="sena">
-                    <p><a href="">Google clone</a> </p>
+                <picture class="clone">
+                    <img src="./Image/google_clone.png" alt="google clone">
+                    <p>Google clone:
+                        Este es un clone de la página del buscador m&aacute;s famoso del mundo
+                    </p>
                 </picture>
-                <div>
-                    <button class="secondary">Reposit&oacute;rio</button>
-                    <button class="primary">p&aacute;gina</button>
+                <div class="clone-button">
+                    <button class="secondary"><a href="https://github.com/GilbertArdila/google_clone" target="_blank">Reposit&oacute;rio</a> </button>
+                    <button class="primary"><a href="https://gilbertardila.github.io/google_clone/" target="_blank">p&aacute;gina</a> </button>
                 </div>
 
-                <picture class="sena">
-                    <img src="./Image//aluraM.png" alt="sena">
-                    <p><a href="">Mobile first</a> </p>
+                <picture class="mobile">
+                    <img src="./Image/mobile_first.png" alt="mobile first">
+                    <p>Mobile first: En esta p&aacute;gina se utiliza la metodolog&iacute;a mobile first para darle un mejor posicionamiento seo en los buscadores </p>
                 </picture>
-                <div>
-                    <button class="secondary">Reposit&oacute;rio</button>
-                    <button class="primary">p&aacute;gina</button>
+                <div  class="mobile-button">
+                    <button class="secondary"><a  href="https://github.com/GilbertArdila/mobileFirst" target="_blank">Reposit&oacute;rio</a></button>
+                    <button class="primary"><a  href="https://gilbertardila.github.io/mobileFirst/" target="_blank">p&aacute;gina</a> </button>
+                </div>
+               
+                <picture class="hangman">
+                    <img src="./Image/hangman.png" alt="hangman">
+                    <p>El ahorcado. Una recreaci&oacute;n del famoso juego hangman, realizada en HTML5, CSS3 Y JavaScript</p>
+                </picture>
+                <div  class="hangman-button">
+                    <button class="secondary"><a href="https://github.com/GilbertArdila/Chakkenge-two" target="_blank">Reposit&oacute;rio</a> </button>
+                    <button class="primary"><a href="https://chakkenge-two.vercel.app/" target="_blank">p&aacute;gina</a> </button>
                 </div>
 
-                <picture class="sena">
-                    <img src="./Image//aluraM.png" alt="sena">
-                    <p><a href="">El ahorcado</a> </p>
+                <picture class="encripter">
+                    <img src="./Image/encriptador.png" alt="encriptador">
+                    <p><a href="">Encriptador: Ac&aacute; tratamos de recrear un encriptador de palabras; este admite letras en may&uacute;sculas as&iacute; como min&uacute;sculas, incliuda la letra 'ñ'</a> </p>
                 </picture>
-                <div>
-                    <button class="secondary">Reposit&oacute;rio</button>
-                    <button class="primary">p&aacute;gina</button>
-                </div>
-
-                <picture class="sena">
-                    <img src="./Image//aluraM.png" alt="sena">
-                    <p><a href="">Encriptador</a> </p>
-                </picture>
-                <div>
-                    <button class="secondary">Reposit&oacute;rio</button>
-                    <button class="primary">p&aacute;gina</button>
+                <div  class="encripter-button">
+                    <button class="secondary"><a href="https://github.com/GilbertArdila/Challenge_one" target="_blank"> Reposit&oacute;rio</a></button>
+                    <button class="primary"><a href="https://challenge-one-encriptador.vercel.app/" target="_blank">p&aacute;gina</a> </button>
                 </div>
             </div>
            
@@ -245,7 +262,49 @@
       </section>
         
       <section>
-           <div class="contact-me"> </div>
+           <div class="contact-me" id="contacto"> 
+               <div class="foto">
+                  
+               </div>
+               <div class="title">
+                   <h2>Contacto</h3>
+                    <p>¿Quieres contactarme? Completa el siguiente formulario y me contactar&eacute; contigo lo antes posible.  
+                    </p>
+               </div>
+               <div class="form">
+                   <form action="mailto:'gilbertferney@gmail.com'" name="form" id="form">
+                    <label for="nombre">
+                        <span>Ingresa tu nombre</span>
+                        <input type="text" id="nombre" name="nombre" class="name"
+                         placeholder="Tu nombre"  autocomplete="name"
+                          required > 
+                    </label>
+
+                    <label for="mail">
+                        <span>Ingresa tu mail</span>
+                        <input type="email" id="mail" name="mail" class="mail"
+                         placeholder="Tu correo"  autocomplete="email"
+                          required > 
+                    </label>
+
+                    <label for="asunto">
+                      
+                        <input type="text" id="asunto" name="asunto" class="asunto"
+                         placeholder="Asunto"> 
+                    </label>
+
+                        <textarea id="mensaje"  class="mensaje" cols="40" rows="10">Mensaje</textarea> 
+
+                    <input  type="submit" value="Enviar mensaje" class="primary" id="enviar" >
+
+                      
+                      
+                    
+
+                   </form>
+               </div>
+           </div>
+
       </section>
        
 
@@ -254,6 +313,8 @@
        
     </main>
     <footer>
+        <p>Desarrollado por Gilbert Ardila</p>
+        <p>2022</p>
     </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

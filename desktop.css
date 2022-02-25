@@ -1,0 +1,48 @@
+@media(min-width:1200px){
+    .header-nav-tablet ul li{
+      
+      font-size:3rem ;
+    }
+    .personal-data span{
+        margin: 40px 0;
+    }
+    .laboral-experience .laboral-experience-logos{
+        display:  grid;
+        grid-template-columns: 70% 1fr;
+        width: 90%;
+    }
+    
+    #clone{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #clone-button{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #mobile{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #mobile-button{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #hangman{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #hangman-button{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #encripter{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #encripter-button{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+}
