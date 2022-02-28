@@ -12,7 +12,7 @@ html{
 }
 body{
     font-size: 1.8rem;
-    background-color: rgb(219, 219, 213);
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -38,52 +38,21 @@ header{
    justify-content: space-between;
    margin-top: 10px;
 }
-
+.header__div .nombre{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
 .header__div .nav__title{
-    font-weight: bold;
-    margin: 0 20px;
+    margin: 0 10px;
     font-size: 2rem;
 }
 .header__div li{
     list-style: none;
 }
 
-.header_menu_img{
-    display: flex;
-    justify-content: center;
-    align-items:end;
-    height: 50%;
 
-}
-.header_menu_img:hover{
-    transform: scale(1.2);
-}
 
- .header-nav{
-    display: none;
-    position: absolute;
-    align-self: flex-end;
-    top:calc(70px);
-    left: calc(40%);
-    width: auto;
-    height: auto;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0  0 5px  1px black;
-    background-color: white;
-    color: black;
-}
-.header-nav .header-nav__ul{
-    list-style: none;
-    
-}
-.header-nav .header-nav__ul li a{
-   text-decoration: none;
-   color: black;
-}
-.header-nav .header-nav__ul li:hover {
-    transform: scale(1.1);
-}
+
 .header-nav-tablet{
     display: none;
 }
@@ -95,8 +64,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
-    padding: 0 10px;
+  
+    padding: 0 5px;
 }
 .personal-data picture img{
     width: 98px;
@@ -115,14 +84,15 @@ main{
     font-weight: lighter;
     margin: 0;
     margin-bottom: 10px;
-
     padding: 0;
 }
 .personal-data__ul li{
     display: inline;
-    margin: 0 10px 0 0;
+    margin: 0 5px 0 0;
 }
-
+.personal-data__ul a{
+    font-size: 1.3rem;
+}
 .personal-data__ul img{
     position: relative;
     width: 20px;
@@ -140,10 +110,7 @@ main{
 .about-me p{
     margin: 10px;
 }
-.section-p{
-    margin: 10px;
-    padding: 0 5px;
-}
+
 .Skills,
 .Hobbies,
 .studies,
@@ -173,6 +140,26 @@ main{
     grid-template-rows: 1fr auto;
     justify-items: center;
 }
+
+.studies .education-logos .date p:first-child{
+    font-weight: bold;
+    
+}
+.studies .education-logos .date p:last-child{
+    font-size: 1.4rem;
+    
+}
+.studies .education-logos picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    
+}
 .Skills .Skills-logos picture,
 .Hobbies .hobbies-logos picture
 {
@@ -185,7 +172,7 @@ main{
     height: 80px;
     background-color: white;
 }
-.studies .education-logos picture,
+
 .laboral-experience .laboral-experience-logos picture{
     display:flex ;
     flex-direction: column;
@@ -197,18 +184,8 @@ main{
     background-color: white;
 }
 
-.Hobbies .hobbies-logos .movies img{
-    
-    width: 100px;
-    height: 80px;
-}
-.education-logos .sena img,
-.education-logos .mision-tic img,
-.education-logos .alura img,
-.education-logos .platzi img{
-    width: 100px;
-    height: 60px;
-}
+
+
 
 .laboral-experience .laboral-experience-logos{
     display: flex;
@@ -226,6 +203,16 @@ main{
     width: 80%;
     
 }
+.laboral-experience .laboral-experience-logos picture p{
+    margin: 5px 0;
+    padding: 0;
+    align-self: flex-start;
+}
+.laboral-experience .laboral-experience-logos picture img+p{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+ 
  .primary{
   background-color:var(--primary-blue) ;
   color: white;

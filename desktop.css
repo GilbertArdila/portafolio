@@ -1,48 +1,107 @@
 @media(min-width:1200px){
+    .header__div{
+        margin-top: 21px;
+    }
+    .header__div .nombre{
+        position: absolute;
+        margin-left: 67px;
+        font-size: 3rem;
+    }
+    .nav__title{
+        display: none;
+    }
+    .header-nav-tablet{
+        display: block;
+        position: absolute;
+        margin: 0;
+        right: 13px;
+        top: 0;
+        
+    }
+    .header-nav-tablet .header-nav-tablet__ul{
+        display: flex;
+        list-style: none;
+        margin-top: 20px;
+        
+ 
+    }
+    .header-nav-tablet .header-nav-tablet__ul li{
+     margin: 0 5px;
+ }
+    .header-nav-tablet .header-nav-tablet__ul li::after{
+        content: '-';
+    }
     .header-nav-tablet ul li{
       
       font-size:3rem ;
     }
+    .personal-data picture img{
+        width: 350px;
+        height: 350px;
+       
+    }
+   .personal-data span+p{
+      position: absolute;
+      top: 192px;
+      left: 0;
+      width: 550px;
+   }
     .personal-data span{
         margin: 40px 0;
     }
+    .personal-data__ul{
+        margin-left: 20px;
+    }
+    .personal-data__ul li{
+        margin-right: 30px;
+    }
+    .personal-data__ul a{
+        font-size: 2.5rem;
+
+    }
+     h2{
+    font-size:4rem ;
+}
+.about-me{
+    padding: 30px 100px;
+}
     .laboral-experience .laboral-experience-logos{
         display:  grid;
         grid-template-columns: 70% 1fr;
         width: 90%;
     }
     
-    #clone{
+    .encripter{
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    #clone-button{
+    .encripter-button{
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    #mobile{
+    .hangman{
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    #mobile-button{
+    .hangman-button{
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    #hangman{
+    .pantalla{
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    #hangman-button{
+    .pantalla-button{
         grid-column: 2/3;
         grid-row: 3/4;
     }
-    #encripter{
-        grid-column: 1/2;
-        grid-row: 4/5;
+   
+    .studies .education-logos picture{
+        width: 90%;
+        height: 250px;
     }
-    #encripter-button{
-        grid-column: 2/3;
-        grid-row: 4/5;
+    .studies .education-logos picture img{
+        width: 200px;
     }
 
 }
